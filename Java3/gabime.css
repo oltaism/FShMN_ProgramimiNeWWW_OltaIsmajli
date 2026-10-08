@@ -1,0 +1,12 @@
+/*
+  #poster fitonte ndaj .poster sepse selektori me ID ka specifikë më të
+  lartë. Rregullat tani janë bashkuar këtu pa konflikt dhe pa !important.
+
+  box-sizing: border-box (te style.css) bën që padding dhe border të
+  përfshihen brenda width, ndaj paneli nuk e tejkalon ekranin.
+*/
+#poster {
+  color: #17263c;
+  width: min(100%, 40rem);
+  padding: clamp(1.5rem, 4vw, 2rem);
+}

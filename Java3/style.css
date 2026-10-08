@@ -1,0 +1,149 @@
+:root {
+  --sfondi: #f4f7fd;
+  --paneli: #ffffff;
+  --teksti: #14243b;
+  --theksi: #087a70;
+  --korniza: #ced9e8;
+  --hapesira: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  color: var(--teksti);
+  background: var(--sfondi);
+  margin: 0;
+  line-height: 1.45;
+}
+
+.skip {
+  position: absolute;
+  top: -4rem;
+  left: var(--hapesira);
+  z-index: 1;
+  padding: 0.6rem 0.9rem;
+  color: white;
+  background: var(--theksi);
+}
+
+.skip:focus {
+  top: var(--hapesira);
+}
+
+.site-header {
+  padding: 0.65rem 1.3rem 2.25rem;
+  border-bottom: 3px solid var(--theksi);
+}
+
+.site-header p {
+  margin: 0 0 1.25rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.15;
+}
+
+main {
+  padding: 2.35rem var(--hapesira);
+}
+
+.poster {
+  margin-inline: auto;
+  border: 1px solid var(--korniza);
+  border-radius: 9px;
+  background: var(--paneli);
+}
+
+.etiketat {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.75rem;
+}
+
+.etiketa {
+  display: inline-block;
+  padding: 0.32rem 0.62rem;
+  border: 2px solid var(--theksi);
+  border-radius: 999px;
+}
+
+.etiketa--kufizuar {
+  border-style: dashed;
+}
+
+h2 {
+  margin: 0 0 1rem;
+  font-size: 1.45rem;
+  line-height: 1.25;
+}
+
+.poster p {
+  margin: 0 0 1rem;
+}
+
+.detajet {
+  font-size: 0.95rem;
+}
+
+.butoni {
+  display: inline-block;
+  padding: 0.55rem 0.85rem;
+  border-radius: 6px;
+  color: white;
+  background: var(--theksi);
+  font-weight: 600;
+}
+
+.butoni:hover {
+  background: #075f58;
+}
+
+a:focus-visible {
+  outline: 4px solid #f2b705;
+  outline-offset: 3px;
+}
+
+footer {
+  padding: 1.25rem;
+}
+
+@media (min-height: 560px) {
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  footer {
+    margin-top: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-header {
+    padding-bottom: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  main {
+    padding-block: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+}
