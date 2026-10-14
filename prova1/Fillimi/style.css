@@ -1,0 +1,54 @@
+* { 
+  box-sizing: border-box; 
+}
+
+.container { 
+  display: grid; 
+  gap: 1rem; 
+}
+
+body {
+  font-family: system-ui;
+  margin: 1rem;
+}
+
+.cards {
+  background-color: aliceblue;
+  color: black;
+  width: 1000px;
+  padding: 2rem;
+  border: 2px solid navy;
+  grid-template-columns: 3fr;
+  
+}
+
+.art1 {
+  width: 300px;
+  padding: 1rem;
+  border: 2px solid red;
+}
+
+.art2 {
+  width: 300px;
+  padding: 1rem;
+  border: 2px solid red;
+}
+
+.art3 {
+  width: 300px;
+  padding: 1rem;
+  border: 2px solid red;
+}
+
+
+a:focus-visible {
+  outline: 3px solid navy;
+  outline-offset: 3px;
+}
+
+@media (min-width: 800px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
