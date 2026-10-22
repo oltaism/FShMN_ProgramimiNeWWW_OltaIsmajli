@@ -1,0 +1,256 @@
+:root {
+  --sfondi: #f3f6fa;
+  --paneli: #ffffff;
+  --teksti: #14243b;
+  --ndihmes: #38536d;
+  --theksi: #087a70;
+  --lidhja: #176ca4;
+  --korniza: #ced9e8;
+  --hapesira: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  color: var(--teksti);
+  background: var(--sfondi);
+  line-height: 1.5;
+}
+
+.skip {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+}
+
+.skip:focus {
+  left: var(--hapesira);
+  top: var(--hapesira);
+  z-index: 10;
+  padding: 0.5rem 0.75rem;
+  background: var(--paneli);
+  color: var(--lidhja);
+  border: 2px solid var(--lidhja);
+  border-radius: 0.25rem;
+}
+
+header,
+.menu,
+main,
+footer {
+  width: min(1100px, 100%);
+  margin-inline: auto;
+  padding-inline: 1.4rem;
+}
+
+header {
+  padding-top: 0.65rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 3px solid var(--theksi);
+}
+
+header p {
+  margin: 0 0 1rem;
+  color: var(--ndihmes);
+}
+
+h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+
+.nëntitulli {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 0.75rem;
+  padding-block: 1rem;
+}
+
+.menu a {
+  display: inline-block;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid var(--korniza);
+  border-radius: 999px;
+  background: var(--paneli);
+  color: var(--lidhja);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.menu a:hover {
+  border-color: var(--theksi);
+  color: var(--theksi);
+}
+
+.menu a:focus-visible,
+.skip:focus,
+.karta a:focus-visible,
+.detajet a:focus-visible {
+  outline: 3px solid #f2b705;
+  outline-offset: 3px;
+}
+
+main {
+  padding-top: 1.25rem;
+  padding-bottom: 3rem;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.hero-tekst {
+  flex: 1 1 16rem;
+  min-width: 0;
+}
+
+.hero-figura {
+  flex: 1 1 16rem;
+  min-width: 0;
+  margin: 0;
+}
+
+.imazh-fleksibel {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.25rem, 3vw, 1.6rem);
+  overflow-wrap: anywhere;
+}
+
+.hyrje {
+  margin: 0 0 1.25rem;
+  color: var(--ndihmes);
+  max-width: 42rem;
+}
+
+.kartat {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.karta {
+  min-width: 0;
+  padding: 1.15rem 1rem 1.2rem;
+  border: 1px solid var(--korniza);
+  border-radius: 0.6rem;
+  background: var(--paneli);
+  box-shadow: 0 1px 2px rgba(20, 40, 60, 0.04);
+}
+
+.kategori {
+  display: inline-block;
+  margin: 0 0 0.65rem;
+  padding: 0.2rem 0.6rem;
+  border: 2px solid var(--theksi);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.karta h3 {
+  margin: 0 0 0.55rem;
+  font-size: 1.15rem;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.orar {
+  margin: 0 0 0.7rem;
+  color: var(--ndihmes);
+  font-size: 0.95rem;
+}
+
+.karta p {
+  overflow-wrap: anywhere;
+}
+
+.karta a {
+  display: inline-block;
+  margin-top: 0.35rem;
+  color: var(--lidhja);
+  font-weight: 600;
+}
+
+.karta a:hover {
+  color: #0d4f7a;
+}
+
+.detajet {
+  margin-top: 2.5rem;
+}
+
+.detajet article {
+  min-width: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--korniza);
+  border-radius: 0.6rem;
+  background: var(--paneli);
+}
+
+.detajet h3 {
+  margin: 0 0 0.4rem;
+  overflow-wrap: anywhere;
+}
+
+.detajet p {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+footer {
+  padding-bottom: 1.25rem;
+  color: var(--ndihmes);
+}
+
+@media (min-width: 600px) {
+  .kartat {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 900px) {
+  .kartat {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .hero {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  header,
+  .menu,
+  main,
+  footer {
+    padding-inline: 1rem;
+  }
+}

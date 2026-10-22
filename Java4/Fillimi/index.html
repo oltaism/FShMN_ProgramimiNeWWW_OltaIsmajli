@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="sq">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Festivali që përshtatet në çdo ekran</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Kalo te përmbajtja</a>
+
+    <header>
+      <p>Programimi në WWW · Java IV</p>
+      <h1>Festivali që përshtatet në çdo ekran</h1>
+      <p class="nëntitulli">Programi i Festivalit të Shkencës në Kampus · 22 tetor 2026</p>
+    </header>
+
+    <nav class="menu" aria-label="Navigimi i festivalit">
+      <a href="#programi">Programi</a>
+      <a href="#pune-moti">Punëtori</a>
+      <a href="#ligjerate-adne">Ligjërata</a>
+      <a href="#lab-mikroskop">Laboratorë</a>
+      <a href="#observim-qielli">Observim</a>
+      <a href="#rreth">Rreth festivalit</a>
+    </nav>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-titull">
+        <div class="hero-tekst">
+          <h2 id="hero-titull">Një ditë shkence, e lexueshme në çdo ekran</h2>
+          <p>
+            Zgjidh një aktivitet, shiko orarin dhe hap detajet. Programi mbetet i
+            qartë në telefon, tablet dhe ekran të gjerë.
+          </p>
+        </div>
+        <figure class="hero-figura">
+          <svg
+            class="imazh-fleksibel"
+            viewBox="0 0 640 280"
+            role="img"
+            aria-labelledby="hero-img-titull hero-img-desc"
+          >
+            <title id="hero-img-titull">Ilustrim i festivalit të shkencës</title>
+            <desc id="hero-img-desc">
+              Një poster i thjeshtë me laborator, yje dhe një robot të vogël.
+            </desc>
+            <rect width="640" height="280" rx="16" fill="#dceef2" />
+            <rect x="36" y="40" width="180" height="200" rx="12" fill="#ffffff" />
+            <circle cx="126" cy="110" r="38" fill="#b7e3dc" />
+            <rect x="88" y="150" width="76" height="54" rx="8" fill="#087a70" />
+            <circle cx="360" cy="78" r="6" fill="#f2b705" />
+            <circle cx="412" cy="58" r="4" fill="#f2b705" />
+            <circle cx="448" cy="92" r="5" fill="#f2b705" />
+            <path d="M320 170h170v70H320z" fill="#ffffff" />
+            <circle cx="372" cy="205" r="22" fill="#176ca4" />
+            <circle cx="438" cy="205" r="22" fill="#176ca4" />
+            <rect x="392" y="148" width="28" height="36" rx="6" fill="#14243b" />
+            <path d="M520 40h84v200h-84z" fill="#ffffff" />
+            <path d="M548 88h28v96h-28z" fill="#7eb6d9" />
+            <circle cx="562" cy="86" r="16" fill="#7eb6d9" />
+          </svg>
+        </figure>
+      </section>
+
+      <section id="programi" aria-labelledby="programi-titull">
+        <h2 id="programi-titull">Gjashtë aktivitetet e ditës</h2>
+        <p class="hyrje">
+          Kartat tregojnë titullin, kategorinë, orarin dhe një lidhje për detaje.
+          Titulli i gjatë mbështillet brenda kartës, pa e zgjeruar faqen.
+        </p>
+
+        <div class="kartat">
+          <article class="karta" id="pune-moti">
+            <p class="kategori">Punëtori</p>
+            <h3>
+              Si mund ta ndërtojmë një model të thjeshtë të motit me të dhëna lokale dhe pajisje të lira në kampus
+            </h3>
+            <p class="orar">
+              <time datetime="2026-10-22T09:00">22 tetor, ora 09:00–10:30</time>
+              · Salla A1
+            </p>
+            <p>
+              Mat temperaturën, lagështinë dhe erën me sensorë të thjeshtë, pastaj
+              vizato një parashikim për oborrin e kampusit.
+            </p>
+            <a href="#detaje-moti">Shiko detajet</a>
+          </article>
+
+          <article class="karta" id="ligjerate-adne">
+            <p class="kategori">Ligjëratë</p>
+            <h3>ADN-ja në kuzhinë: çfarë fsheh një luleshtrydhe?</h3>
+            <p class="orar">
+              <time datetime="2026-10-22T10:45">22 tetor, ora 10:45–11:30</time>
+              · Amfiteatri
+            </p>
+            <p>
+              Një demonstrim i shkurtër se si nxirret ADN nga fruta të zakonshme,
+              pa laborator të shtrenjtë.
+            </p>
+            <a href="#detaje-adne">Shiko detajet</a>
+          </article>
+
+          <article class="karta" id="lab-mikroskop">
+            <p class="kategori">Laborator</p>
+            <h3>Bota e padukshme nën mikroskop</h3>
+            <p class="orar">
+              <time datetime="2026-10-22T12:00">22 tetor, ora 12:00–13:15</time>
+              · Laboratori B2
+            </p>
+            <p>
+              Vëzhgo gjethe, kripë dhe ujë pellgu. Çdo grup ka një mikroskop dhe
+              një fletë vëzhgimi.
+            </p>
+            <a href="#detaje-mikroskop">Shiko detajet</a>
+          </article>
+
+          <article class="karta" id="observim-qielli">
+            <p class="kategori">Observim</p>
+            <h3>Harta e qiellit pa pajisje të shtrenjta</h3>
+            <p class="orar">
+              <time datetime="2026-10-22T14:00">22 tetor, ora 14:00–15:00</time>
+              · Terasa e bibliotekës
+            </p>
+            <p>
+              Mëso të gjesh Veriun dhe disa yjësi me një hartë të printuar dhe
+              një busull të thjeshtë.
+            </p>
+            <a href="#detaje-qielli">Shiko detajet</a>
+          </article>
+
+          <article class="karta" id="robot-riciklim">
+            <p class="kategori">Robotikë</p>
+            <h3>Robotë të vegjël nga materiale të riciklueshme</h3>
+            <p class="orar">
+              <time datetime="2026-10-22T15:15">22 tetor, ora 15:15–16:30</time>
+              · Punishtja C
+            </p>
+            <p>
+              Ndërto një robot që lëviz me motor të vogël, kapak shisheje dhe
+              karton. Nuk nevojitet përvojë paraprake.
+            </p>
+            <a href="#detaje-robot">Shiko detajet</a>
+          </article>
+
+          <article class="karta" id="kime-ngjyra">
+            <p class="kategori">Kimi</p>
+            <h3>Ngjyrat e bimëve: kimia e kuqësisë dhe të gjelbrës</h3>
+            <p class="orar">
+              <time datetime="2026-10-22T16:45">22 tetor, ora 16:45–17:30</time>
+              · Laboratori i kimisë
+            </p>
+            <p>
+              Testo si ndryshon ngjyra e lakrës së kuqe me lëng limoni, sodë dhe
+              ujë të thjeshtë.
+            </p>
+            <a href="#detaje-ngjyra">Shiko detajet</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="detajet" id="rreth" aria-labelledby="detaje-titull">
+        <h2 id="detaje-titull">Detajet e aktiviteteve</h2>
+
+        <article id="detaje-moti">
+          <h3>Punëtoria e motit</h3>
+          <p>
+            Merr me vete një fletore. Sensorët jepen në vend, por vendet janë të
+            kufizuara në 16 pjesëmarrës.
+          </p>
+        </article>
+        <article id="detaje-adne">
+          <h3>Ligjërata e ADN-së</h3>
+          <p>
+            Demonstrimi bëhet në skenë; nuk ka prekje të kimikateve. Pyetjet
+            merren në fund, për 10 minuta.
+          </p>
+        </article>
+        <article id="detaje-mikroskop">
+          <h3>Laboratori i mikroskopit</h3>
+          <p>
+            Grupe nga 3 persona. Nëse mban syze, sjelli: fokusi i mikroskopit
+            ndryshon nga syri i lirë.
+          </p>
+        </article>
+        <article id="detaje-qielli">
+          <h3>Observimi i qiellit</h3>
+          <p>
+            Aktiviteti varet nga moti. Nëse bie shi, zhvendoset në sallën e
+            hartave me një simulim të qiellit.
+          </p>
+        </article>
+        <article id="detaje-robot">
+          <h3>Punëtoria e robotëve</h3>
+          <p>
+            Materialet jepen aty. Nëse ke alergji nga ngjitësi, njofto stafin para
+            fillimit.
+          </p>
+        </article>
+        <article id="detaje-ngjyra">
+          <h3>Kimia e ngjyrave</h3>
+          <p>
+            Eksperimenti është i sigurt për shkollë, por mos pi lëngjet e
+            provës. Përparësi kanë nxënësit e klasave 6–9.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer>Shembull mësimor · Të dhëna të sajuara · Vetëm front end</footer>
+  </body>
+</html>
