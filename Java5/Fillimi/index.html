@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="sq">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Regjistro misionin</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Kalo te përmbajtja</a>
+
+    <header>
+      <p>Programimi në WWW · Java V</p>
+      <h1>Regjistro misionin</h1>
+    </header>
+
+    <main id="main">
+      <p class="shenim">
+        Demonstrim lokal: përdor vetëm të dhëna të sajuara. Nuk kryhet
+        regjistrim real.
+      </p>
+
+      <form action="pranuar.html" method="get">
+        <p class="fushe">
+          <label for="pseudonimi">Pseudonimi (3–20 karaktere)</label>
+          <input
+            id="pseudonimi"
+            name="pseudonimi"
+            type="text"
+            minlength="3"
+            maxlength="20"
+            required
+            autocomplete="nickname"
+          />
+        </p>
+
+        <p class="fushe">
+          <label for="email">Email i sajuar</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            placeholder="student@example.org"
+            autocomplete="email"
+          />
+        </p>
+
+        <p class="fushe">
+          <label for="persona">Persona (1–5)</label>
+          <input
+            id="persona"
+            name="persona"
+            type="number"
+            min="1"
+            max="5"
+            required
+            inputmode="numeric"
+          />
+        </p>
+
+        <fieldset>
+          <legend>Kategoria</legend>
+          <p class="zgjedhje">
+            <input id="kategoria-art" name="kategoria" type="radio" value="art" required />
+            <label for="kategoria-art">Art</label>
+          </p>
+          <p class="zgjedhje">
+            <input id="kategoria-shkence" name="kategoria" type="radio" value="shkence" />
+            <label for="kategoria-shkence">Shkencë</label>
+          </p>
+        </fieldset>
+
+        <p class="zgjedhje pranim">
+          <input id="rregullat" name="rregullat" type="checkbox" value="po" required />
+          <label for="rregullat">I pranoj rregullat e demonstrimit</label>
+        </p>
+
+        <button type="submit">Kontrollo formularin</button>
+      </form>
+
+      <table>
+        <caption>
+          Oraret e misioneve
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">Ora</th>
+            <th scope="col">Misioni</th>
+            <th scope="col">Vendi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">10:00</th>
+            <td>Gjej shenjën</td>
+            <td>Oborri</td>
+          </tr>
+          <tr>
+            <th scope="row">12:00</th>
+            <td>Lexo hartën</td>
+            <td>Biblioteka</td>
+          </tr>
+          <tr>
+            <th scope="row">14:00</th>
+            <td>Zbulo objektin</td>
+            <td>Laboratori</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <footer>Shembull mësimor · Të dhëna të sajuara · Vetëm front end</footer>
+  </body>
+</html>
